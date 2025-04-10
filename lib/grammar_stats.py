@@ -17,7 +17,6 @@ class GrammarStats:
             return False
 
     def percentage_good(self):
-        # Returns:
-        #   int: the percentage of texts checked so far that passed the check
-        #        defined in the `check` method. The number 55 represents 55%.
-        pass
+        percentage = int((self.valid_texts/self.total_texts) * 100)
+        return f"{percentage}%"
+        
