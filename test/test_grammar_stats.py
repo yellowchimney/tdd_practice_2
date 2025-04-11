@@ -37,3 +37,8 @@ def test_percentage_returns_percentage_of_valid_texts():
     result = stats.percentage_good()
 
     assert result == "50%"
+
+    stats.check("some creepy text")
+    result = stats.percentage_good()
+    
+    assert result == "33%"
